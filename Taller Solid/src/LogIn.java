@@ -1,11 +1,9 @@
 public class LogIn {
+	private DataBase db;
     public void log (User user) {
         System.out.println("Has access to the website");
-        insertUserInDatabase(user);
+        db.insertUser(user);
         // Logic
-    }
-    public void insertUserInDatabase(User user){
-        // Insert user in database
     }
 }
 
