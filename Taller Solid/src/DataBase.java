@@ -1,13 +1,13 @@
 
 public class DataBase {
-	 private MySQL mySQL;
+	 private Data d;
 
-	 public DataBase(MySQL mySQL) {
-	    this.mySQL = mySQL;
+	 public DataBase(Data d) {
+	    this.d = d;
 	 }
 
 	 public void insertUser(User user) {
 	     // Logic to insert user into database
-	     mySQL.insert("INSERT INTO users VALUES ...");
+	     d.insert("INSERT INTO users VALUES ...");
 	 }
 }
